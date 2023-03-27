@@ -1,13 +1,14 @@
-import { startGame, getRandomNumber } from '../index.js';
+import { startGame } from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const rulesGame = 'What number is missing in the progression?';
 
 const getProgression = (start, changeLength, difference) => {
-  const members = [];
+  const readyProgression = [];
   for (let i = 0; i <= (changeLength - 1); i += 1) {
-    members.push(start + difference * i);
+    readyProgression.push(start + difference * i);
   }
-  return members;
+  return readyProgression;
 };
 
 const checkProgression = () => {
