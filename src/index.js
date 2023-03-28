@@ -20,4 +20,4 @@ const startGame = (getRoundData, rulesGame) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { startGame };
+export default startGame;
